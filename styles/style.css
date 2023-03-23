@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+main #rectangle {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  width: 53%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 10px 20px rgba(143, 143, 143, 0.3);
+  overflow: hidden;
+}
+main #rectangle .header {
+  color: hsl(218, 22%, 67%);
+  background-color: white;
+  text-align: left;
+  padding: 30px;
+}
+main #rectangle .header .header__h2 {
+  margin: 0;
+  color: hsl(179, 62%, 43%);
+}
+main #rectangle .header .header__h3 {
+  color: hsl(71, 73%, 54%);
+}
+main #rectangle #section {
+  display: grid;
+  text-align: left;
+  grid-template-rows: auto auto;
+}
+main #rectangle #section .subsection1 {
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main #rectangle #section .subsection1 .subsection1__button {
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 3px 10px 20px rgba(99, 98, 98, 0.3);
+}
+main #rectangle #section .subsection1 .subsection1__button button {
+  font-family: "Karla", sans-serif;
+  border-radius: 7px;
+  padding: 15px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  width: 100%;
+  border: none;
+}
+main #rectangle #section .subsection1 .subsection1__button button:hover {
+  background-color: white;
+  color: hsl(71, 73%, 54%);
+}
+main #rectangle #section .subsection1 .subsection1__price {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+main #rectangle #section .subsection1 .subsection1__price h1 {
+  margin: 0;
+  padding: 0;
+}
+main #rectangle #section .subsection1 .subsection1__price #unit {
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  align-items: center;
+  text-align: left;
+}
+main #rectangle #section .subsection2 {
+  padding: 30px;
+  background-color: hsl(179, 65%, 49%);
+}
+main #rectangle #section .subsection2 ul {
+  padding: 0;
+}
+main #rectangle #section .subsection2 ul li {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  main #rectangle {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 10px 20px rgba(143, 143, 143, 0.3);
+    overflow: hidden;
+  }
+  main #rectangle .header {
+    color: hsl(218, 22%, 67%);
+    background-color: white;
+    text-align: left;
+    padding: 30px;
+  }
+  main #rectangle .header .header__h2 {
+    margin: 0;
+    color: hsl(179, 62%, 43%);
+  }
+  main #rectangle .header .header__h3 {
+    color: hsl(71, 73%, 54%);
+  }
+  main #rectangle #section {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+  }
+  main #rectangle #section .subsection1 {
+    padding: 30px;
+    background-color: hsl(179, 62%, 43%);
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main #rectangle #section .subsection1 .subsection1__button {
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 3px 10px 20px rgba(99, 98, 98, 0.3);
+  }
+  main #rectangle #section .subsection1 .subsection1__button button {
+    font-family: "Karla", sans-serif;
+    border-radius: 7px;
+    padding: 15px;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    width: 100%;
+    border: none;
+  }
+  main #rectangle #section .subsection1 .subsection1__button button:hover {
+    background-color: white;
+    color: hsl(71, 73%, 54%);
+  }
+  main #rectangle #section .subsection1 .subsection1__price {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+  }
+  main #rectangle #section .subsection1 .subsection1__price h1 {
+    margin: 0;
+    padding: 0;
+  }
+  main #rectangle #section .subsection1 .subsection1__price #unit {
+    color: hsl(204, 43%, 93%);
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    align-items: center;
+    text-align: left;
+  }
+  main #rectangle #section .subsection2 {
+    padding: 30px;
+    background-color: hsl(179, 65%, 49%);
+  }
+  main #rectangle #section .subsection2 ul {
+    padding: 0;
+  }
+  main #rectangle #section .subsection2 ul li {
+    list-style: none;
+    color: hsl(204, 43%, 93%);
+  }
+}
+html,
+body {
+  color: white;
+  background-color: hsl(204, 43%, 93%);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
